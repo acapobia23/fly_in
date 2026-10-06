@@ -1,0 +1,17 @@
+D0-gate2
+D0-waiting_area2 D1-gate2
+D0-priority_bypass2 D1-waiting_area2 D2-gate2
+D0-convergence D1-priority_bypass2 D2-waiting_area2 D3-gate2
+D0-final_bottleneck D1-convergence D2-priority_bypass2 D3-waiting_area2 D4-gate2
+D0-goal D1-final_bottleneck D2-convergence D3-priority_bypass2 D4-waiting_area2 D5-gate2
+D1-goal D2-final_bottleneck D3-convergence D4-priority_bypass2 D5-waiting_area2 D6-gate2
+D2-goal D3-final_bottleneck D4-convergence D5-priority_bypass2 D6-waiting_area2 D7-gate2
+D3-goal D4-final_bottleneck D5-convergence D6-priority_bypass2 D7-waiting_area2 D8-gate2
+D4-goal D5-final_bottleneck D6-convergence D7-priority_bypass2 D8-waiting_area2 D9-gate2
+D5-goal D6-final_bottleneck D7-convergence D8-priority_bypass2 D9-waiting_area2 D10-gate2
+D6-goal D7-final_bottleneck D8-convergence D9-priority_bypass2 D10-waiting_area2 D11-gate2
+D7-goal D8-final_bottleneck D9-convergence D10-priority_bypass2 D11-waiting_area2
+D8-goal D9-final_bottleneck D10-convergence D11-priority_bypass2
+D9-goal D10-final_bottleneck D11-convergence
+D10-goal D11-final_bottleneck
+D11-goal
