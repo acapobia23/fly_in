@@ -3,7 +3,7 @@ PIP ?= $(PYTHON) -m pip
 UV ?= uv
 SRC_DIR := src
 
-.PHONY: install run debug clean lint lint-strict
+.PHONY: install run debug test clean lint lint-strict
 
 install:
 	uv sync
@@ -13,6 +13,9 @@ run:
 
 debug:
 	$(PYTHON) -m pdb $(SRC_DIR)/__main__.py
+
+test:
+	$(PYTHON) -m unittest discover -s tests -p "test_*.py" -v
 
 clean:
 	rm -rf __pycache__ .mypy_cache .pytest_cache .ruff_cache
