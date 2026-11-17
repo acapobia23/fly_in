@@ -48,7 +48,7 @@ def render(level: Map, drones: List[Drone],
 
     running = True
     finished = False
-    initial_delay = 10_000
+    initial_delay = 5_000
     movement_timer = pg.time.get_ticks() + initial_delay
     movement_delay = 500
     while running:

@@ -27,7 +27,6 @@ class Drone:
 
 
 def get_paths_drones(level: Map) -> list[list[Hub]]:
-    """Return every simple path from the start hub to the end hub."""
     paths: list[list[Hub]] = []
 
     if level.start is None or level.end is None:

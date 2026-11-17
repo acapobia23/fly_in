@@ -109,7 +109,6 @@ python __main__.py
 Alternatively, use the provided Makefile:
 
 ```bash
-cd src
 make install
 make run
 ```
@@ -122,7 +121,6 @@ shows the selected simulation. Close the window to exit.
 The project provides lint and type-check commands:
 
 ```bash
-cd src
 make lint
 make lint-strict
 ```
